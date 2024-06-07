@@ -84,7 +84,22 @@ span{
     display: block
 }
 
+.abas-textos{
+    background-color: var(--botao-inativo);
+    padding: 28px;
+    border-radius: 15px;
+}
 
+.aba-coteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+}
+
+.aba-conteudo-titulo-sencundario{
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
+}
 
 @media screen and (min-width: 700px){
     .botoes{
