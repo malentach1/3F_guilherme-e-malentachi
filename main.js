@@ -21,7 +21,21 @@ function calculaTempo(tempoObjetivo){
     minutos = Math.floor(minutos);
     horas = Math.floor(horas);
     dias = Math.floor(dias);
+
+    segundos = segundos%60
+    minutos = minutos%60
+    horas = horas%24
+    return [dias,horas,minutos,segundos]
 }
+
+let contadorPrimeiro = calculaTempo(tempoObjetivo1)
+contador[0].textContent = `faltam ${contadorPrimeiro[0]} dias, ${contadorPrimeiro[1]} horas, ${contadorPrimeiro[2]} minutos, ${contadorPrimeiro[3]}`;
+let contadorSegundo = calculaTempo(tempoObjetivo2)
+contador[1].textContent = `faltam ${contadorSegundo[0]} dias, ${contadorSegundo[1]} horas, ${contadorSegundo[2]} minutos, ${contadorSegundo[3]}`;
+let contadorTerceiro = calculaTempo(tempoObjetivo3)
+contador[2].textContent = `faltam ${contadorTerceiro[0]} dias, ${contadorTerceiro[1]} horas, ${contadorTerceiro[2]} minutos, ${contadorTerceiro[3]}`;
+let contadorQuarto = calculaTempo(tempoObjetivo4)
+contador[3].textContent = `faltam ${contadorQuarto[0]} dias, ${contadorQuarto[1]} horas, ${contadorQuarto[2]} minutos, ${contadorQuarto[3]}`;
 
 for (let i = 0; i < botoes.length; i++){
     botoes[i].onclick = function(){
