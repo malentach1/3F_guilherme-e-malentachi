@@ -79,6 +79,13 @@ span{
     color: var(--verde);
 }
 
+.contador{
+    padding: 0 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
 .botao.ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
