@@ -86,6 +86,17 @@ span{
     justify-content: center;
 }
 
+.contador-digito-numero{
+    font-size: 80px;
+    margin: 0
+}
+
+.contador-digito-texto{
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0
+}
+
 .botao.ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
